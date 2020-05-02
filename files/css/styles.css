@@ -1,0 +1,948 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+body {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.my-name {
+    font-family: "The Historia Demo", "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    margin-top: 220px;
+    text-shadow: 0 0 12px black;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 9vh;
+    background: #260642;
+}
+
+.nav-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 2px black;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #2c5593;
+    text-shadow: 0 0 4px black;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: #260642;
+    margin: 5px;
+}
+
+.type-writer h2{
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    text-shadow: 0 0 2px black;
+}
+
+.type-writer .tw-text > .txt {
+    border-right: 0.2rem solid white;
+}
+
+.about-me {
+    margin-top: 400px;
+}
+
+.about-me h1, .about-me p {
+    max-width: 60%;
+    margin: 50px;
+    font-size: 1.6em;
+    color: white;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+}
+
+.about-me h1 {
+    font-size: 2.5em;
+}
+
+.about-me img {
+    max-width: 400px;
+    position: absolute;
+    right: 30px;
+    top: 900px;
+    margin: 0 40px;
+    border: 5px solid white;
+}
+
+.about-me .icons .fa-linkedin-square {
+    color: white;
+    position: absolute;
+    left: 20%;
+    font-size: 60px;
+    text-shadow: 0 0 1px white;
+}
+
+.about-me .icons .fa-github{
+    color: white;
+    position: absolute;
+    left: 40%;
+    font-size: 60px;
+    text-shadow: 0 0 1px white;
+}
+
+.about-me .icons i {
+    transition: 0.3s ease;
+}
+
+.about-me .icons i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.about-me h1::before,
+.about-me h1::after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+.about-me h1::before {
+    width: 10rem;
+    height: 3px;
+}
+
+.about-me h1::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    top: 46px;
+}
+
+.skills {
+    position: relative;
+    margin-top: 400px;
+    color: #4A00E0;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.skills p {
+    font-size: 23px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 140px;
+}
+
+.skills-icons {
+    font-size: 70px;
+}
+
+.skills-icons i {
+    padding: 20px;
+}
+
+.skills .container {
+    background-color: white;
+    padding-top: 50px;
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+    height: 450px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.skills h1::before,
+.skills h1::after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4A00E0;
+}
+
+.skills h1::before {
+    width: 8rem;
+    height: 3px;
+}
+
+.skills h1::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    top: 57px;
+}
+
+.devicon-javascript-plain {
+    color: #f0db4f;
+}
+
+.devicon-html5-plain-wordmark {
+    color: #e34c26;
+}
+
+.devicon-css3-plain-wordmark {
+    color: #264de4;
+}
+
+.devicon-bootstrap-plain-wordmark {
+    color: #563d7c;
+}
+
+.devicon-cplusplus-plain {
+    color: #2c5593;
+}
+
+.devicon-git-plain-wordmark {
+    color: #f34f29;
+}
+
+.devicon-mysql-plain-wordmark {
+    color: #00758f;
+}
+
+.devicon-vim-plain {
+    color: #33c302;
+}
+
+.resume {
+    position: relative;
+    margin-top: 220px;
+    color: white;
+    text-shadow: 0 0 4px black;
+    text-align: center;
+}
+
+.resume h1 {
+    font-size: 50px;
+    max-width: 650px;
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    margin: 0;
+}
+
+.resume img {
+    height: 550px;
+    position: absolute;
+    left: 25%;
+    top: 30px;
+    filter: grayscale(100%);
+    transition: 0.6s ease;
+    box-shadow: 0 0 7px black;
+}
+
+.resume img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.personal {
+    position: relative;
+    margin-top: 1100px;
+    color: white;
+    text-shadow: 0 0 4px black;
+    text-align: center;
+}
+
+.personal h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.personal p {
+    font-size: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.personal img {
+    margin: 50px 40px;
+    border: 4px solid linear-gradient(to right, #4A00E0, #8E2DE2);
+    border-radius: 25px;
+    transition: 0.5s ease;
+}
+
+.personal .img-1 {
+    height: 460px;
+}
+
+.personal .img-2 {
+    height: 460px;
+}
+
+.personal .img-3 {
+    height: 460px;
+}
+
+.personal img:hover {
+    transform: scale(1.1);
+}
+
+.personal h1::before,
+.personal h1::after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+.personal h1::before {
+    width: 18rem;
+    height: 3px;
+}
+
+.personal h1::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    top: 57px;
+}
+
+.contact {
+    color: white;
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 80px;
+    text-shadow: 0 0 4px black;
+    top: 70px;
+}
+
+.contact h1 {
+    font-size: 60px;
+    position: relative;
+}
+
+.contact h6 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contact h1::before,
+.contact h1::after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+.contact h1::before {
+    width: 17rem;
+    height: 3px;
+}
+
+.contact h1::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    top: 69px;
+}
+
+.contact span {
+    font-size: 30px;
+}
+
+.contact img {
+    background: white;
+    position: absolute;
+    top: 20px;
+    right: -680px;
+    border: 8px solid linear-gradient(to right, #4A00E0, #8E2DE2);
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background: #260642;
+    margin-top: 250px;
+    position: relative;
+}
+
+footer h2 {
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.up {
+    background-color: #eee;
+    position: absolute;
+    top: -90px;
+    right: 140px;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    box-shadow: 0 0 8px black;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: 0.3s ease;
+}
+
+.up i {
+    color: #260642;
+    margin: auto;
+}
+
+.up:hover {
+    transform: scale(1.15);
+}
+
+.projects-click-me {
+    font-size: 22px;
+    position: absolute;
+    bottom: 170px;
+    right: 199px;
+    animation: clickMe 950ms infinite alternate;
+}
+
+.projects-click-me i{
+    display: block;
+}
+
+.javascript-projects {
+    background-color: #eee;
+    position: absolute;
+    top: -90px;
+    right: 260px;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    box-shadow: 0 0 8px black;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: 0.3s ease;
+}
+
+.javascript-projects a {
+    color: #260642;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.javascript-projects:hover {
+    transform: scale(1.15);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(63, 8, 95, 0.99);
+    }
+    70% {
+        box-shadow: 0 0 0 2rem rgba(50, 7, 100, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(47, 6, 85, 0);
+    }
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0%;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes clickMe {
+    from {
+        bottom: 200px;
+    }
+    to {
+        bottom: 170px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .contact img {
+        right: -400px;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+
+    .about-me img {
+        width: 320px;
+    }
+
+    .resume h1 {
+        font-size: 40px;
+        max-width: 550px;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 1168px) {
+
+    .about-me img {
+        top: 960px;
+        width: 250px;
+    }
+
+    .skills .container {
+        height: 480px;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .skills p {
+        margin-bottom: 100px;
+    }
+
+    .resume h1 {
+        font-size: 40px;
+        max-width: 550px;
+        left: 60%;
+    }
+
+    .contact img {
+        top: 20px;
+        width: 340px;
+        right: -280px;
+    }
+
+}
+
+@media screen and (max-width: 1085px) {
+
+    .resume {
+        position: relative;
+        margin-top: 320px;
+    }
+
+    .resume h1 {
+        top: -150px;
+        left: 17%;
+    }
+
+    .contact img {
+        display: none;
+    }
+
+    .projects-click-me {
+        right: 64%;
+    }
+
+    .javascript-projects {
+        right: 70%;
+    }
+
+    .up {
+        right: 50%;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .skills .container {
+        height: 460px;
+        width: 800px;
+    }
+
+    .skills p {
+        margin-bottom: 80px;
+    }
+
+    .projects-click-me {
+        right: 59%;
+    }
+
+    .javascript-projects {
+        right: 65%;
+    }
+
+    .up {
+        right: 47%;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .about-me {
+        margin-top: 800px;
+    }
+
+    .about-me p {
+        max-width: 900px;
+    }
+
+    .about-me h1 {  
+        max-width: 900px;
+    }
+
+    .about-me img {
+        width: 300px;
+        right: 28%;
+        top: 950px;
+    }
+
+    .about-me .icons .fa-linkedin-square {
+        left: 37%;
+    }
+
+    .about-me .icons .fa-github{
+        left: 57%;
+    }
+
+}
+
+@media screen and (max-width: 905px) {
+
+    .projects-click-me {
+        right: 53%;
+    }
+
+    .javascript-projects {
+        right: 60%;
+    }
+
+    .up {
+        right: 42%;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+
+    .about-me img {
+        right: 24%;
+    }
+
+    .projects-click-me {
+        right: 48%;
+    }
+
+    .javascript-projects {
+        right: 56%;
+    }
+
+    .up {
+        right: 37%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        position: static;
+        background: #8E2DE2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        background: #260642;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+
+    .burger div {
+        transition: all 0.6s ease;
+    }
+
+    .skills .container {
+        height: 430px;
+        width: 700px;
+    }
+
+    .skills p {
+        margin-bottom: 40px;
+    }
+
+    .about-me img {
+        right: 23%;
+        top: 1010px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .projects-click-me {
+        right: 47%;
+    }
+
+    .skills .container {
+        height: 550px;
+        width: 600px;
+    }
+
+    .skills p {
+        margin-bottom: 60px;
+    }
+
+    .about-me img {
+        right: 18%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .projects-click-me {
+        right: 46%;
+    }
+
+    .resume h1 {
+        left: 50px;
+    }
+
+    .resume img {
+        left: 19%;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    .projects-click-me {
+        right: 45%;
+    }
+
+    .skills .container {
+        height: 520px;
+        width: 500px;
+    }
+
+    .skills p {
+        margin-bottom: 40px;
+    }
+
+    .about-me .icons .fa-linkedin-square {
+        left: 32%;
+    }
+
+    .about-me .icons .fa-github{
+        left: 52%;
+    }
+
+    .about-me img {
+        right: 13%;
+    }
+
+    .resume h1 {
+        left: 30px;
+    }
+
+    .resume img {
+        left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .projects-click-me {
+        right: 44%;
+    }
+
+    .about-me img {
+        right: 8%;
+        top: 1150px;
+    }
+
+    .resume h1 {
+        left: 10px;
+    }
+
+    .resume img {
+        left: 12%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .projects-click-me {
+        right: 43%;
+    }
+
+    .up {
+        right: 30%;
+    }
+
+    .skills .container {
+        height: 520px;
+        width: 400px;
+    }
+
+    .resume img {
+        left: 7%;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
+
+    .projects-click-me {
+        right: 41%;
+    }
+
+    .personal img {
+        margin: 50px 0;
+    }
+
+    .about-me img {
+        right: 1%;
+    }
+
+    .resume img {
+        left: 3%;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+    .projects-click-me {
+        right: 39%;
+    }
+
+    .skills .container {
+        height: 710px;
+        width: 350px;
+    }
+
+    .skills p {
+        margin-bottom: 40px;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-405deg) translate(-5px, 9px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(405deg) translate(-5px, -9px);
+}
+
+@font-face {
+    font-family: "The Historia Demo";
+    src: url('TheHistoriaDemo.ttf') format("truetype");
+}
+
+/*
+Lokesh Dhakar
+https://lokeshdhakar.com/projects/lightbox2/
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Lokesh Dhakar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
