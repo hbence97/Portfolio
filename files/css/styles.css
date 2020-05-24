@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     font-family: "Roboto";
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -689,10 +690,6 @@ footer h2 {
 
 @media screen and (max-width: 768px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
     nav {
         position: static;
         background: #8E2DE2;  /* fallback for old browsers */
@@ -884,6 +881,10 @@ footer h2 {
 
 @media screen and (max-width: 390px) {
 
+    .about-me img {
+        right: -4.5%;
+    }
+
     .projects-click-me {
         right: 39%;
     }
@@ -895,6 +896,11 @@ footer h2 {
 
     .skills p {
         margin-bottom: 40px;
+    }
+
+    .resume img {
+        height: 450px;
+        left: 5.5%;
     }
 
 }
